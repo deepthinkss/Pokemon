@@ -1,9 +1,8 @@
-import { View, Text, Image, StyleSheet, TouchableOpacity, Dimensions, TextInput } from "react-native";
 import { Link } from "expo-router";
+import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Pokemon } from "../types/pokemon";
-import { getTypeColor } from "../utils/colors";
-import { formatPokemonId, capitalizeFirst } from "../utils/pokemonUtils";
 import { colorsByTypeLight } from "../utils/colors";
+import { capitalizeFirst, formatPokemonId } from "../utils/pokemonUtils";
 
 interface PokemonCardProps {
   pokemon: Pokemon;
